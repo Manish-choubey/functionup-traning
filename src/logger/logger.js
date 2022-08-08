@@ -1,4 +1,4 @@
-const batchName = "Plutonium"
+const batchName = "aplication"
 
 let printName = function() {
     console.log('i am manish choubey and part of function ', batchName)
