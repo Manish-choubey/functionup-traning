@@ -13,13 +13,13 @@ router.get("/test-me", function (req, res) {
 
 // router.post("/createAuthor", authorController.createAuthor  )
 
-// router.get("/getAuthorsData", authorController.getAuthorsData)
+ //router.get("/bookbyupdate", Newbookcontroller.bookbyupdate)
 
  router.post("/createBook", Newbookcontroller.createBook  )
 
-// router.get("/getBooksData", bookController.getBooksData)
+router.put("/newupdateapi", Newbookcontroller.newupdateapi)
 
-// router.get("/getBooksWithAuthorDetails", bookController.getBooksWithAuthorDetails)
+ router.get("/getBooksWithAuthorDetails", Newbookcontroller.getBooksWithAuthorDetails)
 
 
 router.post("/createAuthor", Newauthorcontroller.createAuthor  )
