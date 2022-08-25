@@ -6,7 +6,7 @@ const mid1= function ( req, res, next) {
 }
 
 const mid2= function ( req, res, next) {
-    console.log("Hi I am a middleware named Mid2")
+    console.log(ip.address());
     next()
 }
 
@@ -19,6 +19,16 @@ const mid4= function ( req, res, next) {
     console.log("Hi I am a middleware named Mid4")
     next()
 }
+
+
+
+// var getIP = require('ipware')().get_ip;
+// app.use(function(req, res, next) {
+//     var ipInfo = getIP(req);
+//     console.log(ipInfo);
+//     // { clientIp: '127.0.0.1', clientIpRoutable: false }
+//     next();
+// });
 
 module.exports.mid1= mid1
 module.exports.mid2= mid2
