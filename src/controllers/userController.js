@@ -37,6 +37,14 @@ const createUser= async function (req, res) {
     res.send({msg: "Hi"})
 }
 
+
+let object = {"name":"mansh","lastName":"choubey"}
+object.middleName="kumar"
+object["address"]= "keteya"
+console.log(object)
+
+
+
 const getUsersData= async function (req, res) {
     let allUsers= await UserModel.find()
     res.send({msg: allUsers})
